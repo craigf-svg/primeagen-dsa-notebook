@@ -1,6 +1,6 @@
 # Algorithms in Python 📓
 
-My notebook following [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) - but implemented in Python!
+My notebook following [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) - implemented in Python!
 
 ## Why I’m Building This Project
 
