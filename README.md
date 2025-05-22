@@ -1,6 +1,6 @@
 # Algorithms in Python 📓
 
-This notebook follows [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/), with all programming implemented in Python!
+This notebook follows [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/), with all algorithms and data structures implemented in Python!
 
 ## Why I’m Building This Notebook
 
