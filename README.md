@@ -1,21 +1,21 @@
 # Algorithms in Python 📓
 
-My notebook following [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) - implemented in Python!
+This notebook follows [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/), with all programming implemented in Python!
 
 ## Why I’m Building This Notebook
 
-I’m creating this notebook to build a solid foundation in Python programming and algorithmic thinking.
+I’m creating this notebook as a way of building a strong Python programming and algorithmic thinking base.
 
-I also hope it serves as a helpful resource for others following the course who prefer Python for learning these concepts.
+I also expect it will be a helpful guide for course takers who would prefer to learn these concepts in Python.
 
-## 📚 About This Notebook
+## 📚 About
 
-This project documents my ongoing journey through the course, for each section of the course I will be adding:
+This notebook documents my progress on the course as I work my way through it, and for each section of the course I will be including:
 
 - **Python implementations** of covered data structures and algorithms
 - **Unit tests** written in pytest
 - **Markdown notes** summarizing key concepts, ideas, and capturing memorable quotes from the course
-- Occasional code experiments (like my own 2D maze solver)
+- The occasional programming experiments (like my own 2D maze solver)
 - Visualizations (including binary tree graphs in Mermaid and planned __ASCII among us art__)
 
 ## Getting Started
