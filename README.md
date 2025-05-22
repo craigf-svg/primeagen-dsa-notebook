@@ -2,13 +2,13 @@
 
 My notebook following [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) - implemented in Python!
 
-## Why I’m Building This Project
+## Why I’m Building This Notebook
 
 I’m creating this notebook to build a solid foundation in Python programming and algorithmic thinking.
 
 I also hope it serves as a helpful resource for others following the course who prefer Python for learning these concepts.
 
-## 📚 About This Project
+## 📚 About This Notebook
 
 This project documents my ongoing journey through the course, for each section of the course I will be adding:
 
