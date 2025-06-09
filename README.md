@@ -1,10 +1,10 @@
-# Algorithms in Python 📓
+<h1 align="center">Python Algorithm Docs</h1>
 
-This notebook follows [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/), with all algorithms and data structures implemented in Python!
+These docs follow [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/), with all algorithms and data structures implemented in Python.
 
-## Why I’m Building This Notebook
+## Why I’m Building This
 
-I’m creating this notebook as a way of building a strong Python programming and algorithmic thinking base.
+I’m creating these as a way of building a strong Python programming and algorithmic thinking base.
 
 I also expect it will be a helpful guide for course takers who would prefer to learn these concepts in Python.
 
