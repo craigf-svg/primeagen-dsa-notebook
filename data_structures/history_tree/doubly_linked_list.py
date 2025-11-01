@@ -3,12 +3,16 @@ class Node:
         self.data = data
         self.next = None
         self.prev = None
+        
+    def __str__(self):
+        return f"Node({self.data})"
 
 
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
+        self.curr = None
         self.length = 0
 
     def prepend(self, item):
@@ -26,7 +30,6 @@ class DoublyLinkedList:
     def insert_at(self, item, idx):
         if idx < 0 or idx > self.length:
             raise IndexError("Out of range")
-        curr = self.head
         if idx == self.length:
             self.append(item)
             return
@@ -48,23 +51,35 @@ class DoublyLinkedList:
                 curr = curr.next
             else:
                 return
-        return
+        
 
     def append(self, item):
         self.length += 1
         new_node = Node(item)
         if self.head is None:
             self.head = self.tail = new_node
-            return
-        new_node.prev = self.tail
-        self.tail.next = new_node
-        self.tail = new_node
-        return
+        else:
+            new_node.prev = self.tail
+            self.tail.next = new_node
+            self.tail = new_node
+            self.curr = new_node
+    
+    def undo(self):
+        if self.curr and self.curr.prev:
+            self.curr = self.curr.prev
+    
+    def redo(self):
+        if self.curr is None and self.head is not None:
+            self.curr = self.head
+        if self.curr and self.curr.next:
+            self.curr = self.curr.next
+    
+    def trim_redo_history(self):
+        if self.curr:
+            self.curr.next = None
+            self.tail = self.curr
 
     def remove(self, item):
-        if self.length == 0:
-            return
-
         curr = self.head
         while curr is not None:
             if curr.data == item:
@@ -82,7 +97,7 @@ class DoublyLinkedList:
                 self.length -= 1
                 return
             curr = curr.next
-        return
+        
 
     def remove_at(self, idx):
         found = self.get_idx(idx)
@@ -102,7 +117,7 @@ class DoublyLinkedList:
             found.next.prev = found.prev
 
         self.length -= 1
-        return
+        
 
     def remove_last(self):
         if self.length == 0:
@@ -125,7 +140,7 @@ class DoublyLinkedList:
             return
 
         curr = self.head
-        for i in range(idx):
+        for _ in range(idx):
             curr = curr.next
 
         return curr

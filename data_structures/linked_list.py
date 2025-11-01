@@ -25,7 +25,7 @@ class LinkedList:
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
-        return
+        
 
     def delete_last(self):
         if self.head is None:
@@ -43,7 +43,7 @@ class LinkedList:
             return
         if self.head.data == dataToDelete:
             self.head = self.head.next
-        return
+        
 
     def print_list(self):
         current = self.head

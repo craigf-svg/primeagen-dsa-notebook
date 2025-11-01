@@ -5,13 +5,13 @@ class MyQueue():
 
     def enqueue(self, data):
         self.data.append(data)
-        return
+        
 
     def dequeue(self):
         if self.data:
             var1 = self.data.pop(0)
             return var1
-        return
+        
 
     def empty(self):
         if self.data:
