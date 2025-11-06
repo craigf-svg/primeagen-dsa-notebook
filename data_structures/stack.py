@@ -20,7 +20,6 @@ class Stack():
         node.prev = self.head
         self.head = node
         self.length += 1
-        return
 
     def pop(self):
         if self.length == 0:
@@ -37,9 +36,9 @@ class Stack():
 
     def to_string(self):
         current = self.head
-        str = ''
+        result = ''
         while current:
-            str += f"{current.data} -> "
+            result += f"{current.data} -> "
             current = current.prev
-        str += "None"
-        return str
+        result += "None"
+        return result
